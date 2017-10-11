@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            display: flex;
+        }
+        .box div{
+            margin:10px;
+            background: green;
+        }
+        .box div:nth-child(1){
+            width:200px;
+        }
+        .box div:nth-child(2){
+            /*flex:1;//比例分配*/
+            flex-basis:50%;//以此为基准
+            flex-flow: row wrap;//混合弹性盒子
+        }
+        .box div:nth-child(3){
+            /*flex:1;//比例分配*/
+            flex-basis:50%;//以此为基准
+            flex-flow: row wrap;//混合弹性盒子
+            driection:column;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div>001</div>
+    <div>经常说的几个回复一定是个悍妇热后敷热贴和经常说的几个回复一定是个悍妇热后敷热贴和</div>
+    <div>003</div>
+</div>
+
+</body>
+</html>
